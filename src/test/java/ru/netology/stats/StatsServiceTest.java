@@ -10,7 +10,7 @@ class StatsServiceTest {
     void sum() {
         StatsService stat = new StatsService();
 
-        int months[] = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] months = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 180;
         int actual = stat.sum(months);
 
@@ -21,7 +21,7 @@ class StatsServiceTest {
     void middleSum() {
         StatsService stat = new StatsService();
 
-        int months[] = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] months = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 15;
         int actual = stat.middleSum(months);
 
@@ -32,7 +32,7 @@ class StatsServiceTest {
     void hiMonth() {
         StatsService stat = new StatsService();
 
-        int months[] = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] months = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 20;
         int actual = stat.hiMonth(months);
 
@@ -43,7 +43,7 @@ class StatsServiceTest {
     void lowMonth() {
         StatsService stat = new StatsService();
 
-        int months[] = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] months = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 7;
         int actual = stat.lowMonth(months);
 
@@ -54,7 +54,7 @@ class StatsServiceTest {
     void lowerMiddle() {
         StatsService stat = new StatsService();
 
-        int months[] = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] months = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 5;
         int actual = stat.lowerMiddle(months);
 
@@ -65,7 +65,7 @@ class StatsServiceTest {
     void higherMiddle() {
         StatsService stat = new StatsService();
 
-        int months[] = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] months = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 5;
         int actual = stat.higherMiddle(months);
 

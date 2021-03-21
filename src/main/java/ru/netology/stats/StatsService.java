@@ -17,18 +17,30 @@ public class StatsService {
 
     public int hiMonth(int[] months){
         int max = months[0];
-        for (int month : months) {
-            if (max < month) max = month;
+        int count = 0;
+        int month = 0;
+        for (int m : months) {
+            count ++;
+            if (max <= m){
+                month = count;
+                max = m;
+            }
         }
-        return max;
+        return month;
     }
 
     public int lowMonth(int[] months){
         int min = months[0];
-        for (int month : months) {
-            if (min > month) min = month;
+        int count = 0;
+        int month = 0;
+        for (int m : months) {
+            count ++;
+            if (min >= m){
+                month = count;
+                min = m;
+            }
         }
-        return min;
+        return month;
     }
 
     public int lowerMiddle(int[] months){

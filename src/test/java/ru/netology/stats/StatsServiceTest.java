@@ -33,7 +33,7 @@ class StatsServiceTest {
         StatsService stat = new StatsService();
 
         int[] months = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 20;
+        int expected = 8;
         int actual = stat.hiMonth(months);
 
         assertEquals(expected, actual);
@@ -44,7 +44,7 @@ class StatsServiceTest {
         StatsService stat = new StatsService();
 
         int[] months = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 7;
+        int expected = 9;
         int actual = stat.lowMonth(months);
 
         assertEquals(expected, actual);

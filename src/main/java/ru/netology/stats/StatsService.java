@@ -53,8 +53,8 @@ public class StatsService {
 
     public int higherMiddle(int[] months){
         int count = 0;
-        for (int month : months) {
-            if (month < middleSum(months)) count++;
+            for (int month : months) {
+            if (month > middleSum(months)) count++;
         }
         return count;
     }
